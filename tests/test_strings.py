@@ -28,8 +28,9 @@ def test_key_values_args_f_message():
 
 
 def test_dict_args_f_messages():
-    assert strings.kargs_f_format_message(name="joe", surname="block") == "hello joe block"
+    assert strings.kargs_f_format_message(name="joe", middleName="joe", surname="block") == "hello joe block"
 
 
 def test_iterator_over_kargs_format_message():
-    assert strings.iterator_over_kargs_format_message(name="joe", surname="block") == "hello joe block"
+    assert strings.iterator_over_kargs_format_message(
+        name="joe", middleName="james", surname="block") == "hello joe james block"
