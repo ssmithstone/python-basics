@@ -33,4 +33,3 @@ def test_dict_args_f_messages():
 
 def test_iterator_over_kargs_format_message():
     assert strings.iterator_over_kargs_format_message(name="joe", surname="block") == "hello joe block"
-
