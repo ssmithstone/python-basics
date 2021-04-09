@@ -35,3 +35,16 @@ def test_all_of_list_are_true():
 
 def test_reverse_list_object():
     assert [3, 2, 1] == list(reversed([1, 2, 3]))
+
+
+def test_sort_list_of_ints():
+    assert [1, 2, 3] == sorted([2, 3, 1])
+
+
+def test_reversed_sorted_list_of_ints():
+    assert [3, 2, 1] == list(reversed(sorted([2, 3, 1])))
+
+
+def test_range_to_list():
+    assert [2, 4] == list(range(2, 5, 2))
+    assert [0, 1, 2, 3, 4, 5] == list(range(6))
